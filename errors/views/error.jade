@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  p 
+    b This error was handled by the "Errors" app
+  pre #{error.stack}
