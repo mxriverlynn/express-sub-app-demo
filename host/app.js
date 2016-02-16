@@ -1,11 +1,9 @@
 var express = require("express");
-var logger = require("morgan");
 
 // Root Express App
 // ----------------
 
 var app = express();
-app.use(logger("dev"));
 
 // Sub-Apps
 // --------
