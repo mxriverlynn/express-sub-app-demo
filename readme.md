@@ -13,7 +13,7 @@ One of the areas that has continued to bother me in my own code, is my
 lack of ability to cleanly separate different parts of my express app while
 having those parts hosted in the same root domain name. 
 
-### Prior Errors To Separate Code
+#### Prior Attempts To Separate Code
 
 Previously, I had separated what may have been a `/admin` route into a 
 completely separate sub-domain, like `http://admin.example.com`. 
@@ -30,7 +30,7 @@ what would have been cluttered code from multiple route paths, separate them
 into their own application instance, and bring them back together in a single
 application host. 
 
-### On Being An "extreme" Example App
+#### On Being An "extreme" Example App
 
 I call this an "extreme example" because I have purposely taken the separation
 out to the edge of what I might consider useful. Taking this to an extreme allows
