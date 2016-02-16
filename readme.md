@@ -21,6 +21,8 @@ completely separate sub-domain, like `http://admin.example.com`.
 With the realization that Express application instances can be mounted into
 other Express application instances, however, that changed. 
 
+#### Mounting Sub-Apps Into A Host
+
 While I do see value in moving `/admin` out to a separate sub-domain, still,
 I also see a lot of value in separating `/admin` into it's own project folder
 and still mounting it as `/admin` in the main Express app.
@@ -37,9 +39,13 @@ out to the edge of what I might consider useful. Taking this to an extreme allow
 us to see the bounds of where this might be useful. 
 
 It is still possible to take this separation of apps further, creating more
-sub-applications to split further responsibilities apart. However, this might
-really jump the bounds of usefulness... depending on your circumstances, of
-course. :)
+sub-applications to split further responsibilities apart. 
+
+For example, you could split the "development" vs "production" error handlers 
+into separate app instances, and only mount the one you need. 
+
+However, this might really jump the bounds of usefulness... depending on your 
+circumstances, of course. :)
 
 ## Running The Demo
 
